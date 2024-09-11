@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Subir al Cielo</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+        canvas {
+            display: block;
+            margin: 0 auto;
+            background-color: #b0e0e6; /* Azul cielo claro */
+        }
+        #scoreBoard {
+            position: absolute;
+            top: 620px; /* Ajustar según la altura del canvas y espacio deseado */
+            left: 50%;
+            transform: translateX(-50%);
+            color: black;
+            font-size: 20px;
+            text-align: center;
+        }
+        #gameOver {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 30px;
+            color: red;
+            display: none;
+        }
+        footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="gameCanvas" width="800" height="600"></canvas>
+    <div id="scoreBoard">
+        <div id="score">Puntos: 0</div>
+        <div id="highScore">Mejor puntuación: 0</div>
+    </div>
+    <div id="gameOver">¡Juego terminado!</div>
+    <footer>
+        <p>Tu footer aquí</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
